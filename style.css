@@ -44,6 +44,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  transition: box-shadow 0.5s ease-in;
+}
+
+.blog-single:hover {
+    box-shadow: 16px 16px 0px 0px #000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,9 +87,15 @@ main {
     font-weight: 500;
 }
 
-.blog-single .content h2 {
+.blog-single .content h2 a {
     font-size: 24px;
     font-weight: 800;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.blog-single .content h2 a:focus {
+    color: var(--yellow);
 }
 
 .blog-single .content p {
