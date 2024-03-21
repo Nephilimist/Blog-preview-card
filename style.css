@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap");
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  background: var(--yellow);
+  color: var(--black);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+.blog-single {
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  background: var(--white);
+  box-shadow: 8px 8px 0px 0px #000;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 24px;
+    }
+    
+    .blog-single {
+        max-width: 327px;
+    } 
+
+}
+
+.blog-single .blog-single__featured {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-single .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-single .content .category {
+    padding: 4px 12px;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    font-weight: 800;
+    width: fit-content;
+}
+
+.blog-single .content .date {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blog-single .content h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.blog-single .content p {
+    color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-single .content .category, .blog-single .content .date {
+        font-size: 12px;
+    }
+
+    .blog-single .content h2 {
+        font-size: 20px;
+    }
+
+    .blog-single .content p {
+        font-size: 14px;
+    }
+
+}
+
+.blog-single .author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.blog-single .author img {
+    max-width: 32px;
+}
