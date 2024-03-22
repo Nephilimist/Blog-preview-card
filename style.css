@@ -83,14 +83,14 @@ main {
     font-weight: 500;
 }
 
-.blog-single .content h2 a {
+.blog-single .content h1 a {
     font-size: 24px;
     font-weight: 800;
     text-decoration: none;
     color: var(--black);
 }
 
-.blog-single .content h2 a:focus {
+.blog-single .content h1 a:focus {
     color: var(--yellow);
 }
 
