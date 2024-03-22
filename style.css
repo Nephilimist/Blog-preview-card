@@ -55,12 +55,8 @@ main {
     main {
         padding: 24px;
     }
-    
-    /* .blog-single {
-        max-width: 327px;
-    }  */
-
 }
+
 
 .blog-single .blog-single__featured {
     width: 100%;
